@@ -44,7 +44,7 @@ public class LivroController {
 	
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
-	public Livro inserir(@Valid @RequestBody Livro livro) {
+	public Livro inserir(@RequestBody @Valid Livro livro) {
 		return livroRepository.save(livro);
 	}
 	

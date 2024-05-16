@@ -4,16 +4,27 @@ import java.util.Date;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Embeddable;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 
 @Embeddable
 public class InfoPubli {
-	
+	@Column(name="autor", nullable=false)
+	@NotBlank(message="Preencha o Autor")
+	@Size(max = 40, message="Tamanho máximo 40")
 	private String autor;
 	
+	@Column(name="dataPublicacao", nullable=false)
 	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
+	@NotNull
 	private Date dataPublicacao;
 	
+	@Column(name="editor", nullable=false)
+	@NotBlank(message="Preencha o Editora")
+	@Size(max = 40, message="Tamanho máximo 40")
 	private String editora;
 	
 	public String getAutor() {

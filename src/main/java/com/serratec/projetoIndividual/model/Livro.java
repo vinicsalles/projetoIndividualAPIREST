@@ -7,7 +7,9 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
 @Entity
@@ -16,15 +18,16 @@ public class Livro {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name="id_livro")
+	@Column(name="id_livro", nullable=false)
 	private Long id;
 	
-	@Column
+	@Column(name="titulo", nullable=false)
 	@NotBlank(message="Preencha o título")
 	@Size(max = 40, message="Tamanho máximo 40")
 	private String titulo;
 	
 	@Embedded
+	@Valid
 	private InfoPubli informacaoPublicacao;
 
 	public Long getId() {
