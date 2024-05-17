@@ -3,11 +3,11 @@
 Projeto Individual - API REST FULL
 
 
-<img src="https://github.com/Amandac-b/G6BancoDeDados/blob/main/imagemcapa.jfif">
+<img src="https://miro.medium.com/v2/resize:fit:600/1*ljHUhFnaBissdRBe7DIo6g.png">
 </h1>
 </div>
 </br>
-  <p> Bem-vindo(a) ao repositório do Projeto em Grupo de Conclusão da Disciplina "Banco de Dados" na Residência de Software 2024.1 do SERRATEC. Este projeto consiste na criação de um Banco de Dados para um marketplace onde um usuário pode tanto comprar como vender produtos.</p>
+  <p> Bem-vindo(a) ao repositório do Projeto individual da  Disciplina "API REST FULL" na Residência de Software 2024.1 do SERRATEC. Este projeto consiste na criação de um Banco de Dados para um marketplace onde um usuário pode tanto comprar como vender produtos.</p>
 
 
 ## :detective:Índice
@@ -15,46 +15,70 @@ Projeto Individual - API REST FULL
 <ul>
     <li>Sobre o Projeto</li>
     <li>Tecnologias utilizadas</li>
-    <li>Diagrama</li>
-    <li>Autores do Projeto</li>
 </ul>
+
+
+
+
+## ROTAS PARA TESTES
+http://localhost:8080/livros - Metodo get listar todos
+
+
+http://localhost:8080/livros/1 - Metodo get listar por id
+
+
+http://localhost:8080/livros/1 - Metodo post inserir dados
+
+
+http://localhost:8080/livros/1 - Metodo put atualizar dados
+
+
+http://localhost:8080/livros/1 - Metodo delete deletar dados
+
+
+
 
 ## :desktop_computer:Sobre o Projeto
 
+Voces foram convidados para desenvolver um sistema de biblioteca e precisam criar uma entidade livro contendo as informações, id, titulo
+
+O livro tambem deve ter informações da publicacao contendo autor, data da publicacao, e editora
+
+(Livro, InformacaoPublicacao) (@Embedded, @Embeddable)
+
+Deve-se criar:
+entidade
+interface do repositorio
+o controller contendo um CRUD (GET, POST, PUT, DELETE) do recurso (Inserir as anotações necessárias para que esta classe funcione como um controlador.)
+Inserir as validações para tratamento dos campos obrigatórios na classe Livro (titulo, autor)
+Inserir a classe de ControllerExceptionHandler e ErroResposta para tratamento das exceções
 
 
-Contexto - E-commerce Marketplace
-O Banco de Dados, composto por modelos conceitual, lógico e físico, vai armazenar dados e regras de negócios relevantes para o funcionamento de uma ferramenta virtual de compra e venda de mercadorias na qual o usuário pode efetuar tanto compras quanto vendas de produtos.
 
-Regras do negócio:
-
-Funcionalidades:
-
-- O banco deve armazenar as informações de acesso de cada usuário, como nome de usuário e senha.
-- O banco deve armazenar as informações de contato de cada usuário, como telefone, endereço e e-mail.
-- O banco deve armazenar as informações de cadastro de cada produto, como nome, valor, categoria, descrição e data de fabricação.
-- O banco deve organizar os produtos por categorias.
-- O banco deve ser capaz de armazenar pedidos com produtos de diferentes categorias.
-- O usuário pode vender e/ou comprar 1 ou mais produtos.
-- O banco deve permitir que o próprio usuário, ao inserir um produto no sistema, possa associá-lo a uma categoria.
-- À cada categoria de produto devem ser associados os seguintes valores: código, nome e descrição
-- O banco deve armazenar as informações de identificação de cada usuário, como número de identificação (id), nome, CPF e data de nascimento.
-
-Permissões: 
-
-- O usuário deve ter acesso à categoria de cada produto.
-- O usuário deve poder consultar o conteúdo e a data de realização de seus pedidos.
-- Em caso de compra, o usuário deve poder consultar de quem está comprando o(s) produto(s).
-- Em caso de venda, o usuário deve poder consultar a quem está vendendo seu(s) produto(s).
-- Um pedido pode ter mais de um item de um mesmo produto, de acordo com
-- a quantidade disponível em estoque, mas apenas se esse item for comprado do mesmo vendedor.
  
 Restrições:
 
-- Cada produto pode pertencer a apenas 1 categoria.
-- O usuário não deve ter acesso ao conteúdo dos pedidos de outros usuários.
-- Não podem ser realizados pedidos que não possuam ao menos 1 produto.
-- O banco não deve permitir registros duplicados de um mesmo produto, deve apenas permitir a atualização da quantidade dele em estoque.
+(usar o banco H2)
+
+
+Dependencias:
+
+
+-spring-boot-starter-data-jpa
+
+
+-spring-boot-starter-web
+
+
+-spring-boot-devtools
+
+
+-h2
+
+
+-spring-boot-starter-validation
+
+
 
 ## :hammer_and_wrench: Tecnologias utilizadas
 
