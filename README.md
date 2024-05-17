@@ -65,21 +65,5 @@ Restrições:
 
 ## :chart_with_upwards_trend: Diagramas
 
-<div align="center">
 
-  ## Modelo Conceitual
-   <img src="grupo_modelo_conceitual.png">
-  
-  ## Modelo Lógico
-   <img src="https://github.com/Amandac-b/G6BancoDeDados/blob/main/modelologicogrupo.png">
 
-</div>
-<br/>
-<br/>
-<br/>
-Autores:<br/>
-<a href="https://github.com/Amandac-b">Amanda Bernardes</a><br>
-<a href="https://github.com/rafaelacostamg">Rafaela Costa</a><br>
-<a href="https://github.com/vinicsalles">Vinicius Sales</a><br>
-<a href="https://github.com/filipelomba">Filipe Lomba</a><br>
-<a href="https://github.com/vintinls">Victor Hugo Lisboa</a><br>
