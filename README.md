@@ -58,12 +58,9 @@ Restrições:
 
 ## :hammer_and_wrench: Tecnologias utilizadas
 
-- [DBeaver](https://dbeaver.io/download/)
-- [PostgreSQL](https://www.postgresql.org)
-- [Draw.io](https://app.diagrams.net/)
-- [GitHub](https://github.com/)
+- [Spring Boot]([https://dbeaver.io/download/](https://spring.io/projects/spring-boot))
 
-## :chart_with_upwards_trend: Diagramas
+
 
 
 
