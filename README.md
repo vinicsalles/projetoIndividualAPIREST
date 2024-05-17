@@ -7,7 +7,7 @@ Projeto Individual - API REST FULL
 </h1>
 </div>
 </br>
-  <p> Bem-vindo(a) ao repositório do Projeto individual da  Disciplina "API REST FULL" na Residência de Software 2024.1 do SERRATEC. Este projeto consiste na criação de um Banco de Dados para um marketplace onde um usuário pode tanto comprar como vender produtos.</p>
+  <p> Bem-vindo(a) ao repositório do Projeto individual da  Disciplina "API REST FULL" na Residência de Software 2024.1 do SERRATEC.</p>
 
 
 ## :detective:Índice
