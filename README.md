@@ -47,36 +47,53 @@ O livro tambem deve ter informações da publicacao contendo autor, data da publ
 (Livro, InformacaoPublicacao) (@Embedded, @Embeddable)
 
 Deve-se criar:
+
+
 entidade
+
+
 interface do repositorio
+
+
 o controller contendo um CRUD (GET, POST, PUT, DELETE) do recurso (Inserir as anotações necessárias para que esta classe funcione como um controlador.)
-Inserir as validações para tratamento dos campos obrigatórios na classe Livro (titulo, autor)
+
+
+ATUALIZAÇÃO: 
+
+Validar somente titulo
+
+
+Inserir as validações para tratamento dos campos obrigatórios na classe Livro (titulo) 
+
+
 Inserir a classe de ControllerExceptionHandler e ErroResposta para tratamento das exceções
 
 
 
- 
-Restrições:
+OBS:
+- usar o banco H2
 
-(usar o banco H2)
-
+- Adicionar no readme o caminho para cada endpoint da API
 
 Dependencias:
 
 
--spring-boot-starter-data-jpa
+- spring-boot-starter-data-jpa
 
 
--spring-boot-starter-web
+- spring-boot-starter-web
 
 
--spring-boot-devtools
+- spring-boot-devtools
 
 
--h2 (banco de dados)
+- h2 (banco de dados)
 
 
--spring-boot-starter-validation
+- spring-boot-starter-validation
+
+
+ 
 
 
 
