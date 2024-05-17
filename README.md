@@ -24,16 +24,16 @@ Projeto Individual - API REST FULL
 http://localhost:8080/livros - Metodo get listar todos
 
 
-http://localhost:8080/livros/1 - Metodo get listar por id
+http://localhost:8080/livros/1 - Metodo get listar por id (/1 é o id  de cada objeto do banco)
 
 
-http://localhost:8080/livros/1 - Metodo post inserir dados
+http://localhost:8080/livros/1 - Metodo post inserir dados (/1 é o id  de cada objeto do banco)
 
 
-http://localhost:8080/livros/1 - Metodo put atualizar dados
+http://localhost:8080/livros/1 - Metodo put atualizar dados (/1 é o id  de cada objeto do banco)
 
 
-http://localhost:8080/livros/1 - Metodo delete deletar dados
+http://localhost:8080/livros/1 - Metodo delete deletar dados (/1 é o id  de cada objeto do banco)
 
 
 
