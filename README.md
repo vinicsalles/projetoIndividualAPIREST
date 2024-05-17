@@ -73,7 +73,7 @@ Dependencias:
 -spring-boot-devtools
 
 
--h2
+-h2 (banco de dados)
 
 
 -spring-boot-starter-validation
