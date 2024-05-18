@@ -205,3 +205,6 @@ DROP * FROM LIVRO [42001-224]
 2024-05-16 16:59:37.847531-03:00 jdbc[13]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DROP [*]* FROM LIVRO"; expected "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, MATERIALIZED, VIEW, ROLE, ALIAS, SCHEMA, ALL OBJECTS, DOMAIN, TYPE, AGGREGATE, SYNONYM"; SQL statement:
 DROP * FROM LIVRO [42001-224]
+2024-05-17 21:59:17.829555-03:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "DELETE [*]* FROM LIVRO"; expected "identifier"; SQL statement:
+DELETE * FROM LIVRO [42001-224]
